@@ -1,2 +1,3 @@
-# mailer
-A mailer
+# Fireweb Mailer
+
+Mail agent for fireweb.

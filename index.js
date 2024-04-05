@@ -10,9 +10,12 @@ import mailRoutes from "./routes/mail.js";
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN.split(","),
+};
 
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(helmet());
 app.use(express.json());
 app.use(morgan("common"));
