@@ -15,7 +15,7 @@ const corsOptions = {
 };
 
 // Middleware
-app.use(cors(corsOptions));
+app.use(cors(cors()));
 app.use(helmet());
 app.use(express.json());
 app.use(morgan("common"));
